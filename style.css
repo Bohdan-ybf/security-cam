@@ -681,6 +681,8 @@ body {
         flex-direction: column;
     }
 
+    .test {}
+
 }
 
 @media (max-width: 1200px) {}
