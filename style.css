@@ -104,6 +104,10 @@ body {
 
 }
 
+.header__logo{ 
+    margin-right: 25px;
+}
+
 .header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -133,6 +137,9 @@ body {
 
 /* END Header */
 
+.section__parallax {
+    position: relative;
+}
 
 .parallax {
     position: relative;
@@ -156,6 +163,44 @@ body {
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
 }
+
+/*  Анімація стрілки */
+.arrow-content-view-link {
+    position: absolute;
+    bottom: 25px;
+    z-index: 10;
+}
+
+.arrow-content-view-link:hover {
+    opacity: 60%;
+}
+
+.arrow-content-view {
+    /* width: 30px; */
+}
+
+.arrow-content-view-link {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    100% {
+        bottom: 25px;
+
+    }
+
+    50% {
+        bottom: 45px;
+    }
+
+    100% {
+        bottom: 25px;
+
+    }
+}
+/*  END Анімація стрілки */
 
 .site__title__wrapper {
     display: flex;
