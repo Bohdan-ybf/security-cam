@@ -13,11 +13,9 @@
 </head>
 
 <body>
-
     <div class="wrapper">
-        <p>test</p>
 
-        <header class="header">
+        <header id="home" class="header">
             <div class="container-fluid">
                 <div class="header__wrapper">
                     <div class="header__logo__wrapper">
@@ -27,7 +25,7 @@
                     <nav class="header__nav__menu">
                         <ul class="header__nav__menu__wrapper">
                             <li class="nav__menu-item"><a href="#">Головна</a></li>
-                            <li class="nav__menu-item"><a href="#">Послуги</a></li>
+                            <li class="nav__menu-item"><a href="/poslugi.html">Послуги</a></li>
                             <li class="nav__menu-item"><a href="#ourClients">Наші клієнти</a></li>
                             <li class="nav__menu-item"><a href="#contacts">Контакти</a></li>
                         </ul>
@@ -71,7 +69,7 @@
                                     <li class="information__box-item">Домофони</li>
                                     <li class="information__box-item">Локальні мережі</li>
                                 </ul>
-                                <a class="site-btn information__btn" href="#">Докладніше</a>
+                                <a class="site-btn information__btn" href="/poslugi.html">Докладніше</a>
                             </div>
                         </div>
                     </div>
@@ -283,8 +281,88 @@
 
 
 
-        <footer id="contacts" class="footer"></footer>
+        <footer id="contacts" class="footer">
+            <div class="container-fluid">
+                <div class="footer__wrapper">
+
+                    <div class="footer__contacts-wrapper">
+                        <p class="contacts-title">Контакти</p>
+
+                        <div class="footer__contacts-box">
+                            <img class="contacts-img" src="./img/location-icon.svg" alt="">
+                            <a class="contacts-link" href="#">вул. Хрещатик, 22
+                                м. Київ, 01001, Україна</a>
+                        </div>
+
+                        <div class="footer__contacts-box">
+                            <img class="contacts-img" src="./img/mail-icon.svg" alt="">
+                            <a class="contacts-link" href="#">info@mysite.ua</a>
+                        </div>
+
+                        <div class="footer__contacts-box">
+                            <img class="contacts-img" src="./img/phone-icon.svg" alt="">
+                            <a class="contacts-link" href="tel:00000000">+38 044 123 45 67</a>
+                        </div>
+
+                    </div>
+
+                    <div class="footer__form__wrapper">
+                        <form>
+                            <div class="footer__form__container">
+                                <div class="form__input__box-wrapper">
+                                    <div class="form__input__box">
+                                        <p class="form__input-title">Ім’я</p>
+                                        <input class="form-input-style" type="text">
+                                    </div>
+                                    <div class="form__input__box">
+                                        <p class="form__input-title">Прізвище</p>
+                                        <input class="form-input-style" type="text">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="form__input-title">Ел. адреса *</p>
+                                    <input class="form-input-style" type="text" maxlength="40" name="email"
+                                        pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required
+                                        title="Формат: email@email.com. Перевірте правильність написання email!">
+                                </div>
+                                <div class="form__input__box-wrapper">
+                                    <div class="form__input__box">
+                                        <p class="form__input-title">Тлефон *</p>
+                                        <input class="form-input-style" type="text" name="phone" required>
+                                    </div>
+                                    <div class="form__input__box">
+                                        <p class="form__input-title">Адреса</p>
+                                        <input class="form-input-style" type="text">
+                                    </div>
+                                </div>
+                                <button class="form__btn">Надіслати</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <!-- -------- -->
+
+                    <div class="footer__link__wrapper">
+
+                        <div class="footer__link__container">
+                            <a class="footer__link-item" href="#home">Головна</a>
+                            <a class="footer__link-item" href="#">Послуги</a>
+                            <a class="footer__link-item" href="#ourClients">Наші клієнти</a>
+                            <!-- <a class="footer__link-item" href="#">Контакти</a> -->
+                            <a class="site-btn footer__btn" href="tel:0888888">Зв'язатись</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
     </div>
+
+
+
+
 
 
     <!-- Кнопка вверх upTop -->
