@@ -604,6 +604,10 @@ body {
     display: none;
 }
 
+._lock {
+    overflow: hidden;
+}
+
 /* ENDburger menu */
 
 @media (max-width: 1200px) {}

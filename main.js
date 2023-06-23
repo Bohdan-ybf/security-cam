@@ -47,10 +47,17 @@ let mobileMenu = document.querySelector(".nav-mobile-menu");
 let mainMenu = document.querySelector(".navigation");
 
 mobileMenu.addEventListener("click", function () {
+  document.body.classList.toggle("_lock");
   mobileMenu.classList.toggle("active-menu");
   if (mobileMenu.classList.contains("active-menu")) {
     mainMenu.classList.add("active-menu");
   } else {
     mainMenu.classList.remove("active-menu");
   }
+});
+
+$(".menu-link").on("click", function () {
+  $(".nav-mobile-menu").removeClass("active-menu");
+  $(".header__nav__menu__wrapper").removeClass("active-menu");
+  $("body").removeClass("_lock");
 });
