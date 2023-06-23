@@ -244,7 +244,7 @@ body {
 
 .information__box-text {
     color: #ffffff;
-    line-height: 24px;
+    line-height: 28px;
     margin-bottom: 40px;
     font-weight: 300;
 }
@@ -291,3 +291,41 @@ body {
 }
 
 /* END section__our__advances */
+
+
+/* section__our__clients  */
+
+.section__our__clients {
+    margin: 80px 0;
+}
+
+.our__clients__title {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.our__clients__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.our__clients-box {
+    width: 10%;
+    height: 100px;
+    margin-bottom: 10px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.our__clients-img {
+    width: 100px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+}
