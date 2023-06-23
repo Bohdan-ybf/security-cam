@@ -247,7 +247,16 @@ body {
     line-height: 28px;
     margin-bottom: 40px;
     font-weight: 300;
+    overflow-y: scroll;
+    height: 100%;
+    max-height: 245px;
 }
+
+.information__box-text::-webkit-scrollbar {
+    width: 3px;
+    background-color: transparent;
+}
+
 
 /* END section__information  */
 
@@ -302,7 +311,7 @@ body {
 .our__clients__title {
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -328,4 +337,95 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     margin: auto;
+}
+
+/* section__customer__reviews */
+
+.section__customer__reviews {
+    margin-bottom: 100px;
+}
+
+.customer__reviews__wrapper {
+    display: flex;
+
+}
+
+.customer__reviews__left__box {
+    width: 25%;
+    height: 450px;
+    background-color: #9A8A78;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.customer__reviews-title {
+    font-size: 40px;
+}
+
+.customer__reviews__slider__wrapper {
+    width: 75%;
+    cursor: grab;
+
+}
+
+.mySwiper {
+    height: 100%;
+}
+
+.customer__reviews-box {
+    border-top: 1px solid #9A8A78;
+    border-right: 1px solid #9A8A78;
+    border-bottom: 1px solid #9A8A78;
+    padding: 50px 50px 50px 65px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+}
+
+.customer__reviews-box:last-child {
+    border-left: 1px solid #9A8A78;
+}
+
+.swiper-scrollbar {
+    background-color: #9A8A78;
+}
+
+.swiper-pagination-bullet-active {
+    background: #9A8A78;
+}
+
+.swiper-pagination-bullet {
+    background: #beae9bb9;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #beae9bb9;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: #beae9b6b;
+}
+
+.reviews-text {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+.reviews-text::-webkit-scrollbar {
+    width: 3px;
+    background-color: transparent;
+}
+
+
+.user-name {
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 18px;
 }
