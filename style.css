@@ -665,7 +665,7 @@ body {
         transform: translateX(150%);
         background-color: #000;
         z-index: 150;
-        transition: all ease .2s;
+        transition: all ease .2s
     }
 
     .navigation.active-menu {
@@ -673,7 +673,7 @@ body {
         visibility: visible;
         padding: 25px;
         transform: translateX(0);
-        transition: all ease .2s;
+        transition: all ease .2s
     }
 
     .header__nav__menu__wrapper {
