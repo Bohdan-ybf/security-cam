@@ -9,6 +9,7 @@ $(window).scroll(function () {
   }
 });
 
+// Слайдер відгуки
 btn.on("click", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "300");
@@ -26,4 +27,16 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+// Плавний скрол
+var $page = $("html, body");
+$('a[href*="#"]').click(function () {
+  $page.animate(
+    {
+      scrollTop: $($.attr(this, "href")).offset().top,
+    },
+    1000
+  );
+  return false;
 });
