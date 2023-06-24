@@ -9,14 +9,14 @@ $(window).scroll(function () {
   }
 });
 
-// Слайдер відгуки
 btn.on("click", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "300");
 });
 
+// Слайдер відгуки
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 0,
   loop: true,
   pagination: {
@@ -26,6 +26,17 @@ var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 2,
+    },
+    468: {
+      slidesPerView: 2,
+    },
   },
 });
 
