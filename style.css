@@ -387,7 +387,7 @@ body {
 /* section__customer__reviews */
 
 .section__customer__reviews {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .customer__reviews__wrapper {
@@ -768,6 +768,18 @@ body {
         border-left: 1px solid #9A8A78;
     }
 
+    .section__our__clients {
+        padding: 30px 0;
+    }
+
+    .section__customer__reviews {
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        margin-bottom: 50px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -787,6 +799,18 @@ body {
     .footer__form__wrapper {
         width: 60%;
         margin: 40px 0;
+    }
+
+    .customer__reviews__left__box {
+        height: 70px;
+    }
+
+    .parallax {
+        margin-bottom: 40px;
+    }
+
+    .parallax {
+        background-attachment: initial;
     }
 
 }
